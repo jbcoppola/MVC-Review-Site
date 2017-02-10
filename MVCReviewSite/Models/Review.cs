@@ -12,12 +12,15 @@ namespace MVCReviewSite.Models
 		[Key]
 		public int ID { get; set; }
 
-		public string Title { get; set; }
-		public string Content { get; set; }
-		public DateTime PublishDate { get; set; }
-		public int Rating { get; set; }
+		[ForeignKey("Category")]
+		public string CategoryID { get; set; }
+		public virtual Category Category { get; set; }
 
-		[ForeignKey]
-		public string Category { get; set; }
+		public string Title { get; set; }
+		public int Rating { get; set; }
+		public string ReviewerName { get; set; }
+		public DateTime PublishDate { get; set; }
+		public string Content { get; set; }
+		
 	}
 }
