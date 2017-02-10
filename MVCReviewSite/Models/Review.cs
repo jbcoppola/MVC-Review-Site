@@ -13,7 +13,7 @@ namespace MVCReviewSite.Models
 		public int ID { get; set; }
 
 		[ForeignKey("Category")]
-		public string CategoryID { get; set; }
+		public int CategoryID { get; set; }
 		public virtual Category Category { get; set; }
 
 		public string Title { get; set; }
