@@ -1,66 +1,69 @@
 ﻿@model MVCReviewSite.Models.Review
 
 @{
-    ViewBag.Title = "Details";
+	ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
-
-<div>
-    <h4>Review</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Category.Name)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Category.Name)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Title)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Title)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Rating)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Rating)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.ReviewerName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ReviewerName)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.PublishDate)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.PublishDate)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Content)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Content)
-        </dd>
-
-    </dl>
+<div class="outer-border spaced-box">
+	<div class="row gold-box center-text">
+		<h2>Details</h2>
+	</div>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+
+<div class="outer-border spaced-box">
+	<div class="row gold-box">
+		<h4 class="center-text">Review</h4>
+		<hr />
+		<div class="row details-box">
+			<div class="col-xs-2">
+				@Html.DisplayNameFor(model => model.Category.Name)
+			</div>
+			<div class="col-xs-12 col-sm-10">
+				@Html.DisplayFor(model => model.Category.Name)
+			</div>
+
+			<div class="col-xs-2">
+				@Html.DisplayNameFor(model => model.Title)
+			</div>
+			<div class="col-xs-12 col-sm-10">
+				@Html.DisplayFor(model => model.Title)
+			</div>
+
+			<div class="col-xs-2">
+				@Html.DisplayNameFor(model => model.Rating)
+			</div>
+			<div class="col-xs-12 col-sm-10">
+				@Html.DisplayFor(model => model.Rating)
+			</div>
+
+			<div class="col-xs-2">
+				@Html.DisplayNameFor(model => model.ReviewerName)
+			</div>
+			<div class="col-xs-12 col-sm-10">
+				@Html.DisplayFor(model => model.ReviewerName)
+			</div>
+
+			<div class="col-xs-2">
+				@Html.DisplayNameFor(model => model.PublishDate)
+			</div>
+			<div class="col-xs-12 col-sm-10">
+				@Html.DisplayFor(model => model.PublishDate)
+			</div>
+
+			<div class="col-xs-2">
+				@Html.DisplayNameFor(model => model.Content)
+			</div>
+			<div class="col-xs-12 col-sm-10">
+				@Html.DisplayFor(model => model.Content)
+			</div>
+			<div class="col-xs-12">
+				<p>
+					@Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+					@Html.ActionLink("Back to List", "Index")
+				</p>
+			</div>
+		</div>
+		
+	</div>
+</div>
+

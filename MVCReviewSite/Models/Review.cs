@@ -21,6 +21,5 @@ namespace MVCReviewSite.Models
 		public string ReviewerName { get; set; }
 		public DateTime PublishDate { get; set; }
 		public string Content { get; set; }
-		
 	}
 }

@@ -1,7 +1,15 @@
-﻿@{
-    ViewBag.Title = "About";
-}
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+﻿<div class="gold-border spaced-box">
+	<div class="well gold-box">
+		@{
+			ViewBag.Title = "About";
+			ViewBag.Message = "Here at SiegeNut, we're committed to bringing you the latest and greatest in siege equipment as rated and reviewed by our thousands-strong community of expert tacticians";
+		}
+		<h2>@ViewBag.Title</h2>
+	</div>
+</div>
 
-<p>Use this area to provide additional information.</p>
+<div class="gold-border spaced-box">
+	<div class="well gold-box">
+		@ViewBag.Message
+	</div>
+</div>
